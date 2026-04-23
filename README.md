@@ -59,28 +59,3 @@ Cada integrante creó su propia rama para trabajar de forma independiente:
 ```bash
 git checkout -b nombre-rama
 ```
----
-
-### 🔹 Organización del proyecto
-
-* Se creó una carpeta por cada caso asignado.
-* Cada integrante trabajó en su propia rama sin afectar el trabajo de los demás.
-
----
-
-## ✅ Flujo de trabajo
-
-1. Se creó el repositorio principal.
-2. Los integrantes clonaron el repositorio.
-3. Cada uno creó su propia rama.
-4. Se desarrolló cada caso en carpetas separadas.
-5. No se presentaron complicaciones durante el desarrollo.
-
----
-
-## 📌 Conclusión
-
-El uso de Git permitió una correcta organización del trabajo en equipo, facilitando la colaboración sin conflictos.
-El uso de ramas ayudó a que cada integrante pudiera desarrollar su caso de manera independiente y ordenada.
-
----
