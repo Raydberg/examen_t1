@@ -49,9 +49,8 @@ Durante el desarrollo del proyecto se utilizaron los siguientes comandos:
 Se utilizó para copiar el repositorio remoto al entorno local:
 
 ```bash
-git clone 
+git clone https://github.com/Raydberg/examen_t1.git
 ```
----
 
 ### 🔹 Crear ramas
 
