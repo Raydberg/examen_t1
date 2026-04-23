@@ -60,15 +60,6 @@ Cada integrante creó su propia rama para trabajar de forma independiente:
 ```bash
 git checkout -b nombre-rama
 ```
-<img width="983" height="879" alt="image" src="https://github.com/user-attachments/assets/29522cb6-1cf8-4c3f-9b0f-5e276e5b5235" />
-
-## 🔄 Git pull para descargar cambios recientes
-<img width="575" height="351" alt="image" src="https://github.com/user-attachments/assets/ae71ce23-ee9f-48e3-9ad1-3fc2ce54f687" />
-
-## 🔄 Pull Request Final
-
-
-
 ---
 
 ### 🔹 Organización del proyecto
