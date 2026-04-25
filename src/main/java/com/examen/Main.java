@@ -1,17 +1,42 @@
 package com.examen;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import com.examen.caso2.CuentaBancaria;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        // creo 3 cuentas con sus saldos iniciales
+        CuentaBancaria cuentaAhorros = new CuentaBancaria(850);
+        CuentaBancaria cuentaCorriente = new CuentaBancaria(1200);
+        CuentaBancaria cuentaNueva = new CuentaBancaria(300);
+
+        CuentaBancaria.mostrarTotalCuentas();
+
+        // pruebo depositar y retirar normalmente
+        try {
+            cuentaAhorros.depositar(150);
+            cuentaAhorros.retirar(80);
+        } catch (Exception e) {
+            System.out.println("error: " + e.getMessage());
         }
+
+        // intento retirar mas de lo que hay
+        try {
+            cuentaCorriente.retirar(9999);
+        } catch (Exception e) {
+            System.out.println("error: " + e.getMessage());
+        }
+
+        // intento depositar un monto que no tiene sentido
+        try {
+            cuentaNueva.depositar(-20);
+        } catch (Exception e) {
+            System.out.println("error: " + e.getMessage());
+        }
+
+        // veo como quedaron los saldos
+        cuentaAhorros.mostrarSaldo();
+        cuentaCorriente.mostrarSaldo();
+        cuentaNueva.mostrarSaldo();
     }
 }
